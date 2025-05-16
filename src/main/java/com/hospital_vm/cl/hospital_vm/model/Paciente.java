@@ -1,10 +1,9 @@
 package com.hospital_vm.cl.hospital_vm.model;
 
-import java.sql.Date;
+import java.util.Date;
 
-import org.springframework.data.annotation.Id;
 
-//import jakarta.persistence.Entity;
+
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -17,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Paciente{
-    @Id
+    @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
