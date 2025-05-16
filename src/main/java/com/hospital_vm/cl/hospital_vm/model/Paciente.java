@@ -2,8 +2,6 @@ package com.hospital_vm.cl.hospital_vm.model;
 
 import java.util.Date;
 
-
-
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
