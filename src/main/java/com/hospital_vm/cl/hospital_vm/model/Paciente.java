@@ -4,7 +4,7 @@ import java.sql.Date;
 
 import org.springframework.data.annotation.Id;
 
-import jakarta.persistence.Entity;
+//import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
