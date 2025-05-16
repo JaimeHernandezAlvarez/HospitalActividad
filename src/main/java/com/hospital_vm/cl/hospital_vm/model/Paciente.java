@@ -22,10 +22,10 @@ public class Paciente{
     private String run;
 
     @Column(nullable = false)
-    private String nombre;
+    private String nombres;
 
     @Column(nullable = false)
-    private String apellido;
+    private String apellidos;
 
     @Column(nullable = true)
     private Date fecha_nacimiento;
