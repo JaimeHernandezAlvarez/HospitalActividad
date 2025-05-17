@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hospital_vm.cl.hospital_vm.model.TipoUsuario;
 import com.hospital_vm.cl.hospital_vm.service.TipoUsuarioService;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -64,4 +66,14 @@ public class TipoUsuarioController {
         }
     }
     
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> eliminar(@PathVariable Integer id){
+        try{
+            tipoUsuarioService.delete(id);
+            return ResponseEntity.noContent().build();
+        }
+        catch(Exception e){
+            return ResponseEntity.notFound().build();
+        }
+    }
 }
