@@ -59,8 +59,8 @@ public class AtencionController {
             ate.setFecha_atencion(atencion.getFecha_atencion());
             ate.setHora_atencion(atencion.getHora_atencion());
             ate.setCosto(atencion.getCosto());
-            ate.setId_paciente(atencion.getId_paciente());
-            ate.setId_medico(atencion.getId_medico());
+            ate.setPaciente(atencion.getPaciente());
+            ate.setMedico(atencion.getMedico());
             ate.setComentario(atencion.getComentario());
 
             atencionService.save(ate);

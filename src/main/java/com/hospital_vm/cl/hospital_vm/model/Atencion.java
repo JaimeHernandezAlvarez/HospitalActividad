@@ -26,11 +26,15 @@ public class Atencion {
     @Column(nullable = false,precision = 10,scale = 2)
     private Number costo;
     
-    @Column(nullable = false,length = 10)
-    private Integer id_paciente;
+    @Column(length = 10)
+    @ManyToOne
+    @JoinColumn(name = "id_paciente")
+    private Paciente paciente;
     
-    @Column(nullable = false,length = 10)
-    private Integer id_medico;
+    @Column(length = 10)
+    @ManyToOne
+    @JoinColumn(name = "id_medico")
+    private Medico medico;
     
     @Column(nullable = true,length = 300)
     private String comentario;
